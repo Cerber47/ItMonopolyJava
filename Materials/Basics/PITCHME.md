@@ -12,7 +12,7 @@
 Что мы хотим от программы
 @snapend
 
-@snap[north-west list-content-concise span-50]
+@snap[south-west list-content-concise span-50]
 @ol [list-bullets-black]
 - Уметь ветвить ход работы программы
 - Зацикливать фрагменты кода
