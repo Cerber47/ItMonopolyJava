@@ -8,11 +8,11 @@
 @title[Title + Concise List]
 
 @snap[north-west]
-Что хотим от кода [ Step-by-Step ]
+Что хотим от кода
 @snap
 
 @snap[south-west list-content-concise span-100]
-@ol
+@ol [list-bullets-black](false)
 - Уметь ветвить ход работы программы
 - Зацикливать фрагменты кода
 - Вызывать в нужных нам местах рании фрагменты программы
