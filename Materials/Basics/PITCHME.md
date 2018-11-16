@@ -1,6 +1,6 @@
-nap[north-west]
+
 ## Основы Java
-@snapend
+
 
 @snap[north-west]
 Лекция №2 - Control flow
