@@ -6,8 +6,9 @@
 }
 
 .small-text {
-  text-align: left;
-  font-size: 0.1em !important;
+  width: 90%;
+  text-align: left !important;
+  font-size: 0.5em !important;
 }
 
 .byline {
