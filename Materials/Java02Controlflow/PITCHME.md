@@ -154,6 +154,12 @@ printer()
 Функции
 @snapend
 
+Функции - фрагменты кода, обладающие именем, с помощью которого можно обрашаться к этому фрагменту. Функции также как и переменные имеют свои модификаторы такие как `static` или `public` 
+
++++?code=Materials/Java02Controlflow/CallingVoidFunction.java&lang=java
+
++++
+@size[2.em](Пока все наши функции мы будем сопровождать свойством `static`. Избавиться от него мы сможем позже)
 +++
 
 @snap[north]
@@ -165,11 +171,9 @@ System.out.println();
 int numberOfKeyboard = reader.nextInt();
 ```
 
-+++?code=Materials/Java02Controlflow/CallingVoidFunction.java&lang=java
-
 +++
 
-@snap
+@snap[north-west]
 Оператор `return`
 @snapend
 
@@ -194,3 +198,31 @@ int numberOfKeyboard = reader.nextInt();
 @[15](Управление возвращается в блок main)
  
 +++
+
+@snap[north-west]
+Аргементы функции
+@snap
+
+@snap[north-west]
+Аргементы функкции - это входные параметры функции, которые определяют специфику выполнения ее работы <br> Функция не знает о существовании переменных кроме тех которые определены в ее теле. Поэтому мы должны передать функции эти переменные
+@snapend
+
++++
+
+```Java
+public static void summa(int a, int b){
+	return a+b;
+}
+
+public static void main(String[] args){
+	int a = 1;
+	int b = 2;
+	int sum = summa(a,b);
+	// sum == 3
+}
+```
+
++++ 
+
+@size[2em](Задание. Посмотреть код программы Swaper.java. Попытаться найти объснение поведения программы. Это важно для понимания того как работают аргументы функции!)
+
