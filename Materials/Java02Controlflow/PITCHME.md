@@ -125,7 +125,7 @@ if(a==5)
 @ulend
 @snapend
 
-+++?image=res/ThinkAbout.jpg%size=auto 100%
++++?image=res/memes/ThinkAbout.jpg%size=auto 100%
 
 @snap[north]
 <h1>@color[#FFFFFF](Думай как компилятор)</h1>
@@ -168,7 +168,7 @@ System.out.println();
 int numberOfKeyboard = reader.nextInt();
 ```
 
-+++?code=CallingVoidFunction.java&lang=java
++++?code=Materials/Java02Controlflow/CallingVoidFunction.java&lang=java
 
 +++
 
