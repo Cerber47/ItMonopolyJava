@@ -5,13 +5,15 @@
   font-weight: bold !important;
 }
 
-.snall-text {
+.small-text {
+  color: FF5600;
   font-size: 0.1em !important;
 }
 
 .byline {
   letter-spacing: 0.1em;
   font-size: 0.6em !important;
+  font-weight: bold !important
 }
 
 /* Split-Screen Template Styles */
