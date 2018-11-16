@@ -48,7 +48,7 @@
 
 
 ---
-
+@snap[center]
 ```Java
 int a = 5;
 int b = 4;
@@ -73,7 +73,7 @@ if(a==5)
 	System.out.println("Так все равно сработает");
 
 ```
-
+@snapend
 ---
 @snap[north-west]
 Оператор if-else
