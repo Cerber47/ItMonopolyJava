@@ -260,6 +260,9 @@
   background: none;
 }
 
+.large { font-size: 130% }
+.small { font-size: 70% }
+
 .reveal p span.slide-title {
   display: none;
 }
