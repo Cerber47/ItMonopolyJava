@@ -5,6 +5,10 @@
   font-weight: bold !important;
 }
 
+.snall-text {
+  font-size: 0.1em !important;
+}
+
 .byline {
   letter-spacing: 0.1em;
   font-size: 0.6em !important;
@@ -260,8 +264,6 @@
   background: none;
 }
 
-.large { font-size: 130% }
-.small { font-size: 70% }
 
 .reveal p span.slide-title {
   display: none;
