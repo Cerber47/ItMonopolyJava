@@ -125,11 +125,8 @@ if(a==5)
 @ulend
 @snapend
 
-+++?image=res/memes/ThinkAbout.jpg%size=auto 100%
++++?image=res/memes/ThinkAbout.jpg%size=auto 90%
 
-@snap[north]
-<h1>@color[#FFFFFF](Думай как компилятор)</h1>
-@snapend
 
 +++ 
 
