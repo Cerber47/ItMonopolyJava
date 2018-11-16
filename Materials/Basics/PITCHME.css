@@ -1,3 +1,5 @@
+/* Intro Template Styles */
+
 .headline {
   font-size: 2.5em !important;
   font-weight: bold !important;
@@ -69,6 +71,16 @@
 }
 
 /** Boxed-Text Template Styles ***/
+
+.demo-box-text-padding #boxed-text {
+  padding-top: 1.95em;
+  padding-bottom: 1.95em;
+}
+
+.demo-box-step-padding #boxed-text {
+  padding-top: 1.8em;
+  padding-bottom: 2.3em;
+}
 
 /** Image Template Styles ***/
 
