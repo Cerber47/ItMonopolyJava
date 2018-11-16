@@ -125,7 +125,7 @@ if(a==5)
 @ulend
 @snapend
 
-+++?image=res/memes/ThinkAbout.jpg%size=auto 90%
++++?image=res/memes/ThinkAbout.jpg
 
 
 +++ 
