@@ -1,11 +1,5 @@
-// CallingVoidFunction.java
-// by Aleksey vanurin vanurin@phystech.edu
-// https://itmonopoly.ru/
-// 
-// Пример вызовов различных не. войд функкций
 
 public class CallingNonVoidFunctions{
-
 	static int getMarkAsNumber(){
 		return 10;
 	}

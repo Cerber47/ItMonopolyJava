@@ -183,7 +183,7 @@ int numberOfKeyboard = reader.nextInt();
 @ulend
 @snapend
 
-+++?code=CallingNonVoidFunctions.java&lang=java
++++?code=Materials/Java02Controlflow/CallingNonVoidFunctions.java&lang=java
 
 @[17](Программа начинает выполняться c main)
 @[18](Программа натыкается на вызов функции getMarkAsNumber)
