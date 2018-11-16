@@ -6,7 +6,8 @@
 }
 
 .small-text {
-  width: 90%;
+  width: 90% !important;
+  line-height: 50% !important;
   text-align: left !important;
   font-size: 0.5em !important;
 }
