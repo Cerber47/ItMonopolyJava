@@ -5,7 +5,7 @@ theme : simple
 
 theme-override : res/css/PITCHME.css
 
-highlight : atom-one-dark
+highlight : atom-one-light
 
 layout : center
 
