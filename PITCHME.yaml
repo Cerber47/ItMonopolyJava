@@ -1,0 +1,13 @@
+
+published : true
+
+theme : simple
+
+theme-override : res/css/PITCHME.css
+
+highlight : atom-one-dark
+
+layout : center
+
+
+transition : none
