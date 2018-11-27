@@ -95,7 +95,7 @@ for(int i=0;i<array.length;++i){
 +++
 
 @snap[north-west]
-Цикл foreach
+Цикл foreach*
 @snapend
 
 @snap[west]
@@ -103,7 +103,7 @@ for(int i=0;i<array.length;++i){
 @snapend
 
 @snap[south]
-<small>\* Несмотря на такое путающее название такому циклу соответвует такой же оператор `for` но с другой синтаксической конструкцией^<small/>
+<small>\* Несмотря на такое путающее название такому циклу соответвует такой же оператор `for` но с другой синтаксической конструкцией<small/>
 @snapend
 
 ---
@@ -176,12 +176,12 @@ System.out.println(formatedString);
 @snapend
 
 @snap[west]
-Метод `length()` возвращает количество символов в строке. Таким образом длина строки `"Small string"` равна 12, а длина строки `"A very large text with newline at the end\n"`- 42. Обратите внимание на символы `\n` и `\t` считаются за один символ!
+Метод `length()` возвращает количество символов в строке*. Таким образом длина строки `"Small string"` равна 12, а длина строки `"A very large text with newline at the end\n"`- 42. Обратите внимание на символы `\n` и `\t` считаются за один символ!
 @snapend
 
 @snap[south]
 
-^\*Важно понимать, что современные ЯП считают длину строки иначе!^
+<small>\*Важно понимать, что современные ЯП считают длину строки иначе!<small/>
 @snapend
 +++
 @snap[north]
@@ -298,7 +298,10 @@ System.out.printf("There are %d spaces in string", counter);
 @snapend
 
 +++
-@snap[notrh-west]
+@snap[north-west]
+@snapend
+
+@snap[west]
 `boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)` - проверяет совпадают ли области двух строк
 @snapend
 
