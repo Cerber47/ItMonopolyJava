@@ -8,6 +8,10 @@ Data
 ## Массивы
 +++
 @snap[north-west]
+Массив
+@snapend
+
+@snap[west]
 __Массив__(англ. array) - структура данных, храняшая набор значений, которые именуются __элементами массива__, индентифицируемых по __индексам__(англ. index). Другими словами, это набор элементов одного типа с номерами, идущими друг за другом. Для того чтобы получить доступ к элементу массива, необходимы имя массива и порядковый номер(индекс)
 @snapend
 
@@ -99,7 +103,7 @@ for(int i=0;i<array.length;++i){
 @snapend
 
 @snap[south]
-\* Несмотря на такое путающее название такому циклу соответвует такой же оператор `for` но с другой синтаксической конструкцией
+^\* Несмотря на такое путающее название такому циклу соответвует такой же оператор `for` но с другой синтаксической конструкцией^
 @snapend
 
 ---
@@ -154,7 +158,7 @@ String stringToFormat = "Name:%s(%d) Age:%d. Occupation:%s.";
 System.out.pritntf(stringToFormat, "Aleksey", 24, "russian");
 ```
 +++
-@snap[north-west]
+@snap[north]
 Аналогично этому работает метод `String.format()`
 @snapend
 
@@ -176,9 +180,8 @@ System.out.println(formatedString);
 @snapend
 
 @snap[south]
-@small(
-\*Важно понимать, что современные ЯП считают длину строки иначе!
-)
+
+^\*Важно понимать, что современные ЯП считают длину строки иначе!^
 @snapend
 +++
 @snap[north]
@@ -212,7 +215,8 @@ Sting stringAtTheBeggining = "Hello";
 String space = " ";
 String stringAtTheEnd = "world!"
 
-String finalSting = stringAtTheBeggining.concat(space) + stringAtTheEnd;
+String finalSting = stringAtTheBeggining.concat(space)
+finalString = finalString + stringAtTheEnd;
 ```
 +++
 Стоит понимать, что происходит не сложение строк, а создание новой строки. Конкатенация __дорогая__ операция.
@@ -240,8 +244,6 @@ String finalSting = stringAtTheBeggining.concat(space) + stringAtTheEnd;
 @ol
 - `int indexOf(String str)` - возвращает индекс первого вхождения подстроки в строку или -1, если такой подстроки нет
 - `int indexOf(String str, int fromIndex)` - аналогично но, начиная с некоторого индекса
-- `int indexOf(int ch)` - аналогично но для символа
-- `int indexOf(int ch, int fromIndex)` - аналогично но для символа
 @olend
 @snapend
 +++
@@ -274,12 +276,30 @@ System.out.printf("There are %d spaces in string", counter);
 @snapend
 
 @snap[west]
-@ol
-- `replaceAll(String substring, String replacement)` - заменяет все подстроки(substring) в строке на указанную подстроку(replacement). Важно, что таким образом можно вырезать фрагмент строки, просто указав в качестве заместительной строки пустую(`""`)
-- `split(String devider)` - разбивает строку на массив строк по указанному разделителю. Например. Выбрав в качестве разделителя строку `" "` результатом сплита будет массив подстрок между всеми " ". Строка "Hello world!" таким образом превратится в массив из двух элементов:"Hello" и "world!"
-- `subString(int start, int end)` - возвращает подстроку строки, начиная с индекса `start` и заканчивая индексом `end`
-- `boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)` - проверяет совпадают ли области двух строк
-@olend
+`replaceAll(String substring, String replacement)` - заменяет все подстроки(substring) в строке на указанную подстроку(replacement). Важно, что таким образом можно вырезать фрагмент строки, просто указав в качестве заместительной строки пустую(`""`)
+@snapend
+
++++
+@snap[north-west]
+Другие важные методы
+@snapend
+
+@snap[west]
+`split(String devider)` - разбивает строку на массив строк по указанному разделителю. Например. Выбрав в качестве разделителя строку `" "` результатом сплита будет массив подстрок между всеми " ". Строка "Hello world!" таким образом превратится в массив из двух элементов:"Hello" и "world!"
+@snapend
+
++++
+@snap[north-west]
+Другие важные методы
+@snapend
+
+@snap[west]
+`subString(int start, int end)` - возвращает подстроку строки, начиная с индекса `start` и заканчивая индексом `end`
+@snapend
+
++++
+@snap[notrh-west]
+`boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)` - проверяет совпадают ли области двух строк
 @snapend
 
 ---
