@@ -1,7 +1,17 @@
+@snap[north-west]
+Data
+@snapend
+
+# Основы Java
+
 ---
-# Массивы
+## Массивы
 +++
 @snap[north-west]
+Массив
+@snapend
+
+@snap[west]
 __Массив__(англ. array) - структура данных, храняшая набор значений, которые именуются __элементами массива__, индентифицируемых по __индексам__(англ. index). Другими словами, это набор элементов одного типа с номерами, идущими друг за другом. Для того чтобы получить доступ к элементу массива, необходимы имя массива и порядковый номер(индекс)
 @snapend
 
@@ -85,7 +95,7 @@ for(int i=0;i<array.length;++i){
 +++
 
 @snap[north-west]
-Цикл foreach
+Цикл foreach*
 @snapend
 
 @snap[west]
@@ -93,12 +103,12 @@ for(int i=0;i<array.length;++i){
 @snapend
 
 @snap[south]
-\* Несмотря на такое путающее название такому циклу соответвует такой же оператор `for` но с другой синтаксической конструкцией
+<small>\* Несмотря на такое путающее название такому циклу соответвует такой же оператор `for` но с другой синтаксической конструкцией<small/>
 @snapend
 
 ---
 
-# Строки
+## Строки
 
 +++
 
@@ -125,9 +135,11 @@ String spell = "Abrakadabra";
 
 @snap[west]
 Вывод строковых данных осуществляется классом `System.out`. С этой задачей справляются методы `println()`, `print()` и `printf()`.
+@ol
 - `print()` - выводит строку на экран
 - `println()` - выводит строку на экран и добавляет `\n`
 - `printf()` - выводит отформатированную строку на экран
+@olend
 @snapend
 
 +++
@@ -146,7 +158,7 @@ String stringToFormat = "Name:%s(%d) Age:%d. Occupation:%s.";
 System.out.pritntf(stringToFormat, "Aleksey", 24, "russian");
 ```
 +++
-@snap[north-west]
+@snap[north]
 Аналогично этому работает метод `String.format()`
 @snapend
 
@@ -164,11 +176,12 @@ System.out.println(formatedString);
 @snapend
 
 @snap[west]
-Метод `length()` возвращает количество символов в строке. Таким образом длина строки `"Small string"` равна 12, а длина строки `"A very large text with newline at the end\n"`- 42. Обратите внимание на символы `\n` и `\t` считаются за один символ!
+Метод `length()` возвращает количество символов в строке*. Таким образом длина строки `"Small string"` равна 12, а длина строки `"A very large text with newline at the end\n"`- 42. Обратите внимание на символы `\n` и `\t` считаются за один символ!
 @snapend
 
 @snap[south]
-\*Важно понимать, что современные ЯП считают длину строки иначе! 
+
+<small>\*Важно понимать, что современные ЯП считают длину строки иначе!<small/>
 @snapend
 +++
 @snap[north]
@@ -202,7 +215,8 @@ Sting stringAtTheBeggining = "Hello";
 String space = " ";
 String stringAtTheEnd = "world!"
 
-String finalSting = stringAtTheBeggining.concat(space) + stringAtTheEnd;
+String finalSting = stringAtTheBeggining.concat(space)
+finalString = finalString + stringAtTheEnd;
 ```
 +++
 Стоит понимать, что происходит не сложение строк, а создание новой строки. Конкатенация __дорогая__ операция.
@@ -212,10 +226,12 @@ String finalSting = stringAtTheBeggining.concat(space) + stringAtTheEnd;
 @snapend
 
 @snap[west]
+@ol
 - `equals()` - истина, если две строки равны
 - `endWIth()` - истина, если строка заканчивается на эту подстроку
 - `startWith()` - истина, если строка начинается с этой подстроки
 - `equalsIgnoreCase()` - истина, если две строки равны, игнорируя разницу в регистре
+@olend
 @snapend
 
 +++
@@ -225,10 +241,10 @@ String finalSting = stringAtTheBeggining.concat(space) + stringAtTheEnd;
 
 @snap[west]
 Важной строковой задачей является задача поиска подстроки в строке. С этой проблемой помогают справляться методы:
+@ol
 - `int indexOf(String str)` - возвращает индекс первого вхождения подстроки в строку или -1, если такой подстроки нет
 - `int indexOf(String str, int fromIndex)` - аналогично но, начиная с некоторого индекса
-- `int indexOf(int ch)` - аналогично но для символа
-- `int indexOf(int ch, int fromIndex)` - аналогично но для символа
+@olend
 @snapend
 +++
 @snap[north]
@@ -260,14 +276,37 @@ System.out.printf("There are %d spaces in string", counter);
 @snapend
 
 @snap[west]
-- `replaceAll(String substring, String replacement)` - заменяет все подстроки(substring) в строке на указанную подстроку(replacement). Важно, что таким образом можно вырезать фрагмент строки, просто указав в качестве заместительной строки пустую(`""`)
-- `split(String devider)` - разбивает строку на массив строк по указанному разделителю. Например. Выбрав в качестве разделителя строку `" "` результатом сплита будет массив подстрок между всеми " ". Строка "Hello world!" таким образом превратится в массив из двух элементов:"Hello" и "world!"
-- `subString(int start, int end)` - возвращает подстроку строки, начиная с индекса `start` и заканчивая индексом `end`
-- `	boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)` - проверяет совпадают ли области двух строк
+`replaceAll(String substring, String replacement)` - заменяет все подстроки(substring) в строке на указанную подстроку(replacement). Важно, что таким образом можно вырезать фрагмент строки, просто указав в качестве заместительной строки пустую(`""`)
+@snapend
+
++++
+@snap[north-west]
+Другие важные методы
+@snapend
+
+@snap[west]
+`split(String devider)` - разбивает строку на массив строк по указанному разделителю. Например. Выбрав в качестве разделителя строку `" "` результатом сплита будет массив подстрок между всеми " ". Строка "Hello world!" таким образом превратится в массив из двух элементов:"Hello" и "world!"
+@snapend
+
++++
+@snap[north-west]
+Другие важные методы
+@snapend
+
+@snap[west]
+`subString(int start, int end)` - возвращает подстроку строки, начиная с индекса `start` и заканчивая индексом `end`
+@snapend
+
++++
+@snap[north-west]
+@snapend
+
+@snap[west]
+`boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)` - проверяет совпадают ли области двух строк
 @snapend
 
 ---
-# Enum
+## Enum
 
 +++
 
@@ -280,9 +319,8 @@ Enum
 
 @snap[west]
 
-В Java существует такой тип данных как __enum__ или __перечисление__. Перечисление -это по своей сути набор логически связанных констант. Объвление идет с помощью специального оператора `enum` после которого идет название объявленного перечисления. В фигурных скобках идет перечисление всех доспустимых значений через запятую
-
-```Java
+В Java существует такой тип данных как __enum__ или __перечисление__. Перечисление -это по своей сути набор логически связанных констант. Объвление идет с помощью специального оператора `enum` после которого идет название объявленного перечисления. В фигурных скобках идет перечисление всех доспустимых значений через запятую<br/>
+```
 enum NAME{
 	VALUE1,
 	VALUE2,
@@ -292,6 +330,9 @@ enum NAME{
 ```
 @snapend 
 +++
+@snap[north]
+Объявление перечисления с днями недели
+@snapend
 
 ```Java
 enum weekDay{
@@ -304,11 +345,13 @@ enum weekDay{
 	sunday
 }
 ```
+@[1](Объявляем перечисление с именем weekDay)
+@[2-8](Указываем все возможные значения enum weekDay через запятую)
 +++
 
 @snap[west]
-Создавать такие переменные можно очевидныи образом. Значение из числа констант перечеслиния указывается через точку
- ```Java
+Создавать такие переменные можно очевидныи образом. Значение из числа констант перечеслиния указывается через точку<br/>
+ ```
 weekDay day = weekDay.monday;
 ```
 @snapend
@@ -318,7 +361,7 @@ weekDay day = weekDay.monday;
 
 +++
 @snap[north]
-Использоваие в switch перечисления
+Использоваие enum с switch
 @snapend
 
 ```Java
@@ -332,4 +375,3 @@ switch(day){
 	case sunday: System.out.ptintln("Завтра понедельник...");
 }
 ```
-+++
