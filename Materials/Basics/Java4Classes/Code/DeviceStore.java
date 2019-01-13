@@ -44,13 +44,13 @@ class Device{
 
 	// Вернуть строкове представление о всех полях класса
 	public String generateInfoString(){
-		return String.format("[id#%d]\t -%15s(%s)\t price-%.2f$\t", id, name, type.getInfoString(), price);
+		return String.format("[id#%05d]\t -%15s(%s)\t price-%.2f$\t", id, name, type.getInfoString(), price);
 	}
 }
 
 
 // Класс магазин. Здесь хранятся все доступные к покупке товары
-class Store{
+class Store {
 	Device[] stock;
 	// Конструктор
 	Store(){
@@ -80,7 +80,7 @@ enum DeviceType{
 	laptop("LPT"),
 	smartphone("SPH"),
 	tablet("TBL"),
-	unknown;
+	unknown();
 
 	String code;
 	// Конструктор для типов с строкой

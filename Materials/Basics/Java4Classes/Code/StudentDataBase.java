@@ -24,7 +24,6 @@ class StudentInfo{
 
     // Метод возвращает все поля данного студента в виде одной строки
 	public String info(){
-		System.out.println("HERE");
 		return String.format("Student %s(id:%d) %d years old. %d year. Study %s\n\n", name, id, age, year, course);
 	}
 
